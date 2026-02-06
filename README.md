@@ -1,7 +1,6 @@
 # Task Manager API
 
-This project is a simple Task Manager REST API developed using Symfony, API Platform, and Docker.  
-It allows users to create tasks, update them, and mark tasks as completed through RESTful endpoints.
+This project is a simple Task Manager REST API
 
 ---
 
@@ -13,17 +12,21 @@ It allows users to create tasks, update them, and mark tasks as completed throug
 
 ## Installation & Setup
 
-### 1. Clone the repository
+1. Clone the repository
 ```bash
 git clone <your-repository-url>
 cd task-manager-api
+
 2. Run the Docker containers
 docker compose up -d --build
+
 3. Enter the PHP container
 docker compose exec php bash
+
 4. Run database migrations
 php bin/console make:migration
 php bin/console doctrine:migrations:migrate
+
 API Documentation
 Once the containers are running, open your browser and go to:
 
@@ -57,4 +60,3 @@ phpMyAdmin – Database management tool
 To check running containers:
 
 docker compose ps
-Author
